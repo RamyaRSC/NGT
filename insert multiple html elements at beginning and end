@@ -1,0 +1,27 @@
+2)Write a jQuery to Insert multiple HTML elements at the
+beginning and end of the elements.
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$(".b1").click(function(){
+var newHeading="<h1>Important Note:</h1>";
+var newParagraph=document.createElement("p");
+newParagraph.innerHTML="<em>Hello World</em>";
+$("body").append(newHeading,newParagraph);
+});
+});
+</script>
+</head>
+<body>
+<button class="b1">Insert Contents</button>
+<p>Hello Everyone welcome to SIES(Nerul)College of
+Arts,Science and Comerce</p>
+</body>
+</html>
