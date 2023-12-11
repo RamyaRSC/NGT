@@ -1,0 +1,24 @@
+Aim:- To Implement jQuery Basic and jQuery Events
+1)Write a jquery to change the text contents of the element on
+button click.
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>My Program</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$("button").click(function(){
+document.write("Hello,World");
+})
+});
+</script>
+</head>
+<body>
+<p>Hey there! Welcome to jQuery</p>
+<button>Click Me</button>
+</body>
+</html>
