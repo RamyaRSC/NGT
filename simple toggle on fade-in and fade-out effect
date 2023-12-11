@@ -1,0 +1,23 @@
+2) Write a jQuery to create a simple toggle effect on fade-in and
+fade-out.
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$(".toggle-btn").click(function(){
+$("p").fadeToggle();
+});
+});
+</script>
+</head>
+<body>
+<button type="button" class="toggle-btn">Click</button>
+<p>This is a paragraph</p>
+<p>This is another paragraph</p>
+</body>
+</html>
