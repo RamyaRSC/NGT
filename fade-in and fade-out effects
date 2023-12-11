@@ -1,0 +1,28 @@
+Aim:- To Implement jQuery fading effects and jQuery Sliding
+effects
+1) Write a jQuery to create fade-in and fade-out effects
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$(".btn1").click(function(){
+$("p").fadeOut();
+});
+$(".btn2").click(function(){
+$("p").fadeIn();
+});
+});
+</script>
+</head>
+<body>
+<p> SIES(Nerul) College of Arts, Science & Commerce</p>
+<button class="btn1">Fade Out</button>
+<button class="btn2">Fade In</button>
+</body>
+</html>
