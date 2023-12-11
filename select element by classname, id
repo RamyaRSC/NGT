@@ -1,0 +1,24 @@
+2. Write a jquery to select elements by classname, id& element
+name.
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>My Program</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$(".class1").css("background", "red");
+$("#id1").css("background", "magenta");
+$("h1").css("background", "yellow")
+});
+</script>
+</head>
+<body>
+<p class="class1">CSS Selectors:Class</p>
+<h1>CSS Selectors:Element</h1>
+<p id="id1">CSS Selectors:id</p>
+</body>
+</html>
