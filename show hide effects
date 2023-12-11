@@ -1,0 +1,28 @@
+Aim:- To implement jQuery Selectors, jQuery Hide and Show
+effects
+1)Write a jQuery to create animated show hide effects
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$("#b1").click(function(){
+$("p").hide();
+});
+$("#b2").click(function(){
+$("p").show();
+});
+});
+</script>
+</head>
+<body>
+<p>SIES(Nerul)College of Arts Science &Commerce</p>
+<button id="b1">Hide</button>
+<button id="b2">Show</button>
+</body>
+</html>
