@@ -1,0 +1,36 @@
+3)Write a jQuery to insert multiple HTML elements before and
+after the elements.
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$(".b1").click(function(){
+var newHeading="<h1>Important Note 1:</h1>";
+var newParagraph=document.createElement("p");
+newParagraph.innerHTML="<em>Switch off the pc before
+leaving the lab</em>";
+$("p").before(newHeading, newParagraph);
+});
+$(".b2").click(function(){
+var newHeading="<h1>Important Note 2:</h1>";
+var newParagraph=document.createElement("p");
+newParagraph.innerHTML="<em>Switch off the light before
+leaving the class</em>";
+$("body").append(newHeading,newParagraph);
+});
+});
+</script>
+</head>
+<body>
+<button class="b1">Insert Contents Begin</button>
+<p>Hello Everyone welcome to SIES(Nerul)College of
+Arts,Science and Commerce</p>
+<button class="b2">Insert content After</button>
+</body>
+</html>
