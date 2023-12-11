@@ -1,0 +1,33 @@
+Aim:- To implement jQuery Animation effects and jQuery
+Chaining
+1) Write a jQuery to create an animation effect
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<style>
+img{
+position:relative;/*Required to move element*/
+}
+</style>
+<script>
+$(document).ready(function() {
+$("button").click(function(){
+$("img").animate({left:300});
+});
+});
+</script>
+</head>
+<body>
+<button>Start Animation</button><br/>
+<img
+src="https://images.unsplash.com/photo-1604085572504-a392ddf
+0d86a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8
+b3JhbmdlJTIwZmxvd2VyfGVufDB8fDB8fHww&w=1000&q=80"
+alt="Flower" height="270px" width="240px" />
+</body>
+</html>
