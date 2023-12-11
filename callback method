@@ -1,0 +1,26 @@
+Aim:- To implement jQuery Callback, jQuery Get and Set
+Contents
+1) Write a jQuery effect method with Callback function
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>My Program</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$("button").click(function(){
+$("p").hide("slow", function(){
+alert("The paragraph is now hidden");
+});
+});
+});
+</script>
+</head>
+<body>
+<button>Click</button>
+<p>This is paragraph</p>
+</body>
+</html>
