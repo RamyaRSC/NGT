@@ -1,0 +1,26 @@
+3). Write a jQuery to create slide-up and slide-down effect.
+Code:-
+<!doctype html>
+<html>
+<head>
+<title>Online jQuery Editor</title>
+<script
+src="https://www.tutorialspoint.com/jquery/jquery-3.6.0.js"></script
+>
+<script>
+$(document).ready(function() {
+$(".up-btn1").click(function(){
+$("p").slideUp();
+});
+$(".down-btn2").click(function(){
+$("p").slideDown();
+});
+});
+</script>
+</head>
+<body>
+<p> SIES(Nerul) College of Arts, Science & Commerce</p>
+<button type="button" class="up-btn1">Slide up</button>
+<button type="button" class="down-btn2">Slide down</button>
+</body>
+</html>
