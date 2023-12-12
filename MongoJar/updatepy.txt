@@ -1,0 +1,19 @@
+//updating in python
+
+from pymongo import MongoClient
+
+client = MongoClient("localhost", 27017)
+db = client.myDB119
+
+def update():
+	try:
+		name1 = input ("\nEnter name to update\n ")
+		age1 = input ("Enter age to update\n ")
+		db.MyCol.update_one(
+			{"name" : name1;},
+			{"$set":{"age" : age1}}
+		)
+		print ("\nRecords updated successfully\n")
+	except Exception as e:
+		print(srt(e))
+update()

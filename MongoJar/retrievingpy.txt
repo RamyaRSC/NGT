@@ -1,0 +1,22 @@
+#retrieving in python
+
+from pymongo import MongoClient
+
+#establishing a connection to mongodb
+client = MongoClient("localhost", 27017)
+db = client.myDB119 #selecting the database 'myDB119'
+
+def read():
+	try:
+		#retrieving the data from the 'Mycol' collection
+		col= db.Mycol.find()
+		print("\n All data from employee data database\n")
+
+		#interating through each document in the collection
+		for document in col:
+			print(document)	#printing each document in the collection	
+
+	except Exception as e:
+		print(srt(e)) #printing any exceptions that might occur
+
+read() #invoking the read runction to retrieve data

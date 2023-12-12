@@ -1,0 +1,25 @@
+//inserting in python
+
+from pymongo import MongoClient
+
+#establishing a connection to MongoDB
+client = MongoClient("localhost", 27017)
+db = client.myDB119 #selecting the database 'myDB119'
+
+def insert_data():
+	try:
+		#taking user inpur for name and age
+		name1 = input ("Enter the name = ")
+		age1 = input ("Enter the age = ")
+
+		#inserting a doc into the 'MyCol' collection with name and age
+		db.MyCol.insert_one({
+			"name" = name1; #inserting 'name' field with the user input value
+			"age" = age1; #inserting 'age' field with the user input value
+		})
+
+		print ("inserted data successfully") #success msg after insertion
+	except Exception as e: 
+		print(srt(e)) #printing any exceptions that might occur
+
+insert_data() #invoking the insert_data function to insert data

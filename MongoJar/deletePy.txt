@@ -1,0 +1,18 @@
+//deteion in python
+
+from pymongo import MongoClient
+
+client = MongoClient("localhost", 27017)
+db = client.myDB119
+
+def delete():
+	try:
+		name1 = input ("Enter the name = ")
+
+		db.MyCol.delete_one({
+			"name" : name1;
+		})
+		print ("\ndeletion successfully\n")
+	except Exception as e:
+		print(srt(e))
+delete()
