@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parsing JSON</title>
+</head>
+<body>
+	<script type="text">
+		var data = '{
+			"name":"JSON",
+			"sem":5,
+			"type":"programming"
+		}'
+
+		var json_obj=JSON.parse(data){
+			return value;
+		}
+		
+		document.writeln(json_obj.name);
+
+		for(var key in json_obj){
+			document.write("<br/>"+key);
+		}
+
+		var filtered_json_obj = JSON.parse(data, function (key, value){
+			if(key == "sem"){
+				return undefined;
+			} else{
+				return value;
+			}
+		});
+
+		for (var filteredkey in filtered_json_obj){
+			document.write("<br/>"+filteredkey);
+		}
+	</script>
+</body>
+</html>

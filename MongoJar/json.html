@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JSON programs</title>
+</head>
+<body>
+    <script type= "text/javascript">
+	//creating a JS obj 'data' representing a book
+    	var data= {
+        	"Bname":"JSON", //book name
+        	"publisher":"JataMcgrow", //publisher
+        	"authro":"smith", //author of the book
+        	"price":250, //price of the book
+        	"ISBN":"123455666" //ISBN no. of the book
+    	};
+
+	//display the entire 'data' object as a JSON string
+    	document.writeln(JSON.stringify(data));
+
+	//display a subset of 'data' properties as a JSON string (Bname, author, price)
+    	document.writeln(JSON.stringify(data,["Bname","author","price"]));
+
+    </script>
+</body>
+</html>
